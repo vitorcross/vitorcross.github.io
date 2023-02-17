@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <h1>Get in touch</h1>
+
+      <p></p>
+    </header>
+    <main>
+      <section class="intro">
+        <nav class="intro-link">
+          <div class="intro-area">
+            <img src="Images/telephone.gif" alt="phone" />
+            <div>
+              <a href="#">Phone</a>
+              <p>+44 7 329 60 42 87</p>
+            </div>
+          </div>
+          <div class="intro-area">
+            <img src="Images/email.gif" alt="email" />
+            <div>
+              <a href="#">Email address</a>
+              <p>aroundtheworld@where.com</p>
+            </div>
+          </div>
+          <div class="intro-area">
+            <img src="Images/earth.gif" alt="location" />
+            <div>
+              <a href="#">Location</a>
+              <p>221B, Baker Street, London</p>
+            </div>
+          </div>
+        </nav>
+        <form class="details" action="" method="get">
+          <div class="details-form-1">
+            <label for="name">Enter your name:</label>
+            <input
+              class="textbox-1"
+              type="text"
+              name="name"
+              placeholder="Name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="details-form-2">
+            <label for="email">Enter your email:</label>
+            <input
+              class="textbox-2"
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="details-form-3">
+            <input
+              class="textbox-3"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              id="subject"
+              required
+            />
+            <label for="name">Subject is required.</label>
+          </div>
+          <div class="details-form-4">
+            <textarea class="textbox-4" id="textarea" name="write">Type Your Message</textarea>
+          </div>
+          <div><button class="btn" type="submit">&#9993; Send Message</button></div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

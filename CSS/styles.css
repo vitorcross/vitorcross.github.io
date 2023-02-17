@@ -1,0 +1,88 @@
+:root {
+  --header-font: "Roboto", sans-serif;
+  --main-font: "Dancing Script", cursive;
+}
+
+body {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  font-family: var(--header-font);
+  background-color: rgb(243, 199, 6);
+}
+header .logo {
+  margin: 20px;
+}
+header .logo .logo:hover {
+  color: black;
+}
+header .nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .nav-link ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 15px;
+}
+header .nav-link li {
+  font-size: 1.4em;
+}
+header .nav-link a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border: 3px solid white;
+  border-radius: 26px 0px;
+  padding: 12px;
+  transition: transform 500ms ease-in-out;
+}
+header .nav-link a:hover {
+  display: block;
+  padding: 10px 30px;
+  width: 170px;
+  background-color: white;
+  border: 3px solid black;
+  color: inherit;
+  transform: scale(1.15);
+}
+
+main {
+  font-family: var(--main-font);
+}
+main .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 199, 6);
+}
+main .img-responsive {
+  display: flex;
+  border-radius: 50%;
+  max-width: 30%;
+  margin-top: 100px;
+  opacity: 0.9;
+}
+main .center-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 4em;
+  margin: 50px;
+}
+
+footer {
+  font-family: var(--main-font);
+  background-color: rgb(243, 199, 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0px 0px;
+  padding: 40px;
+}/*# sourceMappingURL=styles.css.map */
