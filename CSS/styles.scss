@@ -6,7 +6,13 @@
 }
 
 //body section
+
 body {
+  /* background-image: linear-gradient(to bottom, #f3c706, #f6c503, #f9c201, #fcc000, #ffbd00); */
+  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); */
+  background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034);
+}
+img {
   max-width: 100%;
 }
 
@@ -14,15 +20,11 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   font-family: var(--header-font);
-  background-color: rgb(243, 199, 6);
-  .logo {
-    margin: 20px;
+  /* background-color: rgb(243, 199, 6); */
+  padding: 20px;
 
-    .logo:hover {
-      color: black;
-    }
-  }
   .nav-link {
     display: flex;
     flex-direction: row;
@@ -33,24 +35,26 @@ header {
       justify-content: space-around;
       flex-wrap: wrap;
       list-style-type: none;
-      gap: 15px;
+      gap: 20px;
     }
     li {
       font-size: 1.4em;
+      padding: 7px;
     }
     a {
       text-decoration: none;
       color: white;
+      font-size: 0.8em;
       text-transform: uppercase;
       border: 3px solid white;
-      border-radius: 26px 0px;
-      padding: 12px;
+      border-radius: 20px 0px;
+      padding: 10px;
       transition: transform 500ms ease-in-out;
     }
     a:hover {
-      display: block;
-      padding: 10px 30px;
-      width: 170px;
+      display: flex;
+      justify-content: center;
+      width: 160px;
       background-color: white;
       border: 3px solid black;
       color: inherit;
@@ -67,9 +71,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(243, 199, 6);
+    /* background-color: rgb(243, 199, 6); */
   }
-  .img-responsive {
+  .myface {
     display: flex;
     border-radius: 50%;
     max-width: 30%;
@@ -79,8 +83,8 @@ main {
   .center-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
     line-height: 4em;
     margin: 50px;
   }
@@ -90,7 +94,7 @@ main {
 
 footer {
   font-family: var(--main-font);
-  background-color: rgb(243, 199, 6);
+  /* background-color: rgb(243, 199, 6); */
   display: flex;
   flex-direction: column;
   align-items: center;

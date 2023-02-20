@@ -1,6 +1,6 @@
 :root {
-  --header-font: 'Roboto', sans-serif;
-  --main-font: 'Dancing Script', cursive;
+  --header-font: "Roboto", sans-serif;
+  --main-font: "Dancing Script", cursive;
 }
 
 body {
@@ -17,70 +17,60 @@ main {
 header {
   margin: 50px;
 }
-
-img {
-  max-width: 100%;
-}
-
 header p {
   width: 30px;
   border-bottom: 4px solid rgb(243, 199, 6);
   border-radius: 2px;
 }
 
-/* first part of form*/
+img {
+  max-width: 100%;
+}
 
+/* first part of form*/
 .intro {
   margin: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 250px;
 }
-
-.intro-link {
+.intro .intro-link {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.intro-area img {
+.intro .intro-area img {
   display: flex;
   margin: 5px;
 }
-
-.intro-area a {
+.intro .intro-area a {
   color: orange;
   text-decoration: none;
 }
-
-.intro p {
+.intro .intro p {
   opacity: 0.6;
 }
 
 /* second part of the form */
-
 .details {
   display: grid;
   grid-template-columns: repeat(minmax(300px, 1fr));
 }
-
-.details-form-1 {
+.details .details-form-1 {
   display: grid;
   font-size: 14px;
   opacity: 0.6;
   margin: 10px 0px;
   gap: 10px;
 }
-
-.details-form-2 {
+.details .details-form-2 {
   display: grid;
   font-size: 14px;
   opacity: 0.6;
   margin: 10px 5px;
   gap: 10px;
 }
-
-.details-form-3 {
+.details .details-form-3 {
   display: grid;
   grid-column: span 2;
   grid-row: auto;
@@ -88,37 +78,36 @@ header p {
   opacity: 0.6;
   margin: 15px 0px;
 }
-
-.details-form-4 {
+.details .details-form-4 {
   display: grid;
-  grid-column: -3 / span 2;
+  grid-column: -3/span 2;
   grid-row: auto;
   opacity: 0.6;
   margin: 15px 0px;
 }
-
-.textbox-1,
-.textbox-2 {
+.details .textbox-1,
+.details .textbox-2 {
   border: 1px solid black;
   border-radius: 8px;
   opacity: 0.6;
   padding: 5px;
   line-height: 1.7;
 }
-
-.textbox-3,
-.textbox-4 {
+.details .textbox-3,
+.details .textbox-4 {
   border: 1px solid black;
   border-radius: 8px;
   padding: 5px;
   line-height: 1.7;
 }
-
-label {
+.details label {
   padding: 10px;
 }
-
-.btn {
+.details .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background: orange;
   border: 1px solid black;
   border-radius: 8px;
@@ -127,3 +116,44 @@ label {
   padding: 10px;
   line-height: 1.7;
 }
+.details .btn img {
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 320px) {
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 520px) {
+  .intro {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 250px;
+  }
+  .intro .intro-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .intro .intro-area img {
+    display: flex;
+    margin: 5px;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(minmax(300px, 1fr));
+  }
+}/*# sourceMappingURL=contact.css.map */
