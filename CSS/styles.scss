@@ -66,7 +66,7 @@ header {
 //main section
 
 main {
-  font-family: var(--main-font);
+  font-family: /* var(--main-font) */ ;
   .center {
     display: flex;
     flex-direction: column;
@@ -87,6 +87,43 @@ main {
     text-align: center;
     line-height: 4em;
     margin: 50px;
+
+    h1 {
+      -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      @-webkit-keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+          transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+          transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+    }
   }
 }
 

@@ -138,14 +138,15 @@ img {
 }
 @media only screen and (min-width: 520px) {
   .intro {
-    margin: 50px;
     display: flex;
-    flex-wrap: wrap;
+    margin: 50px;
     gap: 250px;
   }
   .intro .intro-link {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
   }
   .intro .intro-area img {
