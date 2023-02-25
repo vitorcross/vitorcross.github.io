@@ -151,7 +151,7 @@ footer .socialinks-3 {
   gap: 10px;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .nav-link li {
     display: none;
   }
@@ -164,9 +164,9 @@ footer .socialinks-3 {
     margin: auto;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
   .nav-link li {
-    display: none;
+    display: flex;
   }
   footer .socialinks-1,
   footer .socialinks-2 {
@@ -174,16 +174,6 @@ footer .socialinks-3 {
   }
   footer .socialinks-3 {
     padding: 20px;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .nav-link li {
-    display: flex;
-  }
-  footer .socialinks-1,
-  footer .socialinks-2 {
-    display: flex;
     margin: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
