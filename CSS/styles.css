@@ -98,10 +98,20 @@ main .center-text h1 {
   }
 }
 main .center-text .btn {
+  transition: all 1s;
+  position: relative;
+  padding: 20px;
+}
+main .center-text .btn {
   color: white;
   font-size: 1.5em;
   list-style-type: none;
   text-decoration: none;
+}
+main .empty {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer {

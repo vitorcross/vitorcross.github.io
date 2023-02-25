@@ -118,11 +118,22 @@ main {
       }
     }
     .btn {
+      transition: all 1s;
+      position: relative;
+      padding: 20px;
+    }
+
+    .btn {
       color: white;
       font-size: 1.5em;
       list-style-type: none;
       text-decoration: none;
     }
+  }
+  .empty {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
