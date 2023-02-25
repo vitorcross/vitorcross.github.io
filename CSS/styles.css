@@ -4,9 +4,9 @@
 }
 
 body {
-  /* background-image: linear-gradient(to bottom, #f3c706, #f6c503, #f9c201, #fcc000, #ffbd00); */
-  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); */
-  background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034);
+  background-image: linear-gradient(to bottom, #f3c706, #f6c503, #f9c201, #fcc000, #ffbd00);
+  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); 
+  background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034); */
 }
 
 img {
@@ -81,29 +81,85 @@ main .center-text {
   margin: 50px;
 }
 main .center-text h1 {
-  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-@keyframes tracking-in-contract-bck {
+@keyframes tracking-in-expand {
   0% {
-    letter-spacing: 1em;
-    transform: translateZ(400px);
+    letter-spacing: -0.5em;
     opacity: 0;
   }
   40% {
     opacity: 0.6;
   }
   100% {
-    transform: translateZ(0);
     opacity: 1;
   }
+}
+main .center-text .btn {
+  color: white;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 footer {
   font-family: var(--main-font);
-  /* background-color: rgb(243, 199, 6); */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 70px 0px 0px;
   padding: 40px;
+  color: white;
+}
+footer .social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 2em;
+  gap: 10px;
+}
+footer .socialinks-1,
+footer .socialinks-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .socialinks-1 a,
+footer .socialinks-2 a {
+  text-decoration: none;
+  color: white;
+}
+footer .socialinks-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+  .nav-link li {
+    display: none;
+  }
+  footer .socialinks-1,
+  footer .socialinks-2 {
+    display: none;
+  }
+  footer .socialinks-3 {
+    padding: 20px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav-link li {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer .socialinks-1,
+  footer .socialinks-2 {
+    display: flex;
+    margin: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
