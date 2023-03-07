@@ -24,14 +24,14 @@
       <a href="resume.html"
         ><img class="logo" src="Images/logos/Logo Files/For Web/png/Whitelogo.no.bg.png" alt="logo"
       /></a>
-      <nav class="nav-link">
-        <ul>
-          <li><a href="work.html" target="”_blank”">Work</a></li>
-          <li><a href="skills.html" target="”_blank”">Skills</a></li>
-          <li><a href="resume.html" target="”_blank”">Resume</a></li>
-          <li><a href="contact.html" target="”_blank”">Contact</a></li>
-        </ul>
-      </nav>
+      <div>
+        <img class="drop-menu" id="btn" src="Images/list.png" alt="drop-menu" />
+        <div class="nav-link" id="hamburger">
+          <a href="myPorjects.html" target="”_blank”">My Projects</a>
+          <a href="skills.html" target="”_blank”">Skills</a>
+          <a href="contact.html" target="”_blank”">Contact</a>
+        </div>
+      </div>
     </header>
     <main>
       <section class="center">
@@ -40,15 +40,22 @@
           <h1>Hello, my name is Vitor</h1>
           <p>
             I'm a Junior Front-End WebDeveloper. I have always had interest in computers and I wish
-            to make this my new project of life...
+            to make this my new project of life. Worked as a nurse since 2012 until present, I have
+            worked in Portugal 🇵🇹, Belgium 🇧🇪 and UK 🇬🇧. This year I decided it was time to change
+            my working life direction, I got into an online/live training for a full course of
+            Front-End WebDeveloper which took me 7 months to complete. There I have learned from the
+            most basic to the most advanced coding in HTML, CSS (SASS included) and Javascript
+            (primitive and React).
           </p>
-          <a class="btn" href="#">Read More...</a>
         </div>
       </section>
       <div class="empty">
-        <a href="#"><img src="https://picsum.photos/300/200" alt="random" /></a
-        ><a href="#"><img src="https://picsum.photos/300/200" alt="random" /></a
-        ><a href="#"><img src="https://picsum.photos/300/200" alt="random" /></a>
+        <iframe
+          src="http://flag.joaogoncalves.net/vitor/TheCodeHonors/"
+          width="600px"
+          height="600px"
+          frameborder=""
+        ></iframe>
       </div>
     </main>
     <footer>
@@ -59,11 +66,11 @@
       </div>
       <div class="socialinks-1">
         <a href="#">Home</a>
-        <a href="work.html" target="”_blank”">Work</a>
-        <a href="skills.html" target="”_blank”">Skills</a>
+        <a href="myProjects.html" target="”_blank”">My Projects</a>
       </div>
       <div class="socialinks-2">
-        <a href="resume.html" target="”_blank”">Resume</a>
+        <!-- <a href="resume.html" target="”_blank”">Resume</a> -->
+        <a href="skills.html" target="”_blank”">Skills</a>
         <a href="contact.html" target="”_blank”">Contact</a>
       </div>
       <nav class="socialinks-3">
@@ -73,5 +80,6 @@
       </nav>
       <!-- clock, apply different background colours to my website by clicking a button?-->
     </footer>
+    <script src="JS/hamburger.js" defer></script>
   </body>
 </html>

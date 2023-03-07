@@ -21,47 +21,67 @@ img {
 
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   font-family: var(--header-font);
   /* background-color: rgb(243, 199, 6); */
   padding: 20px;
+}
 
-  .nav-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.logo {
+  display: flex;
+}
 
-    ul {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      list-style-type: none;
-      gap: 20px;
-    }
-    li {
-      font-size: 1.4em;
-      padding: 7px;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-      font-size: 0.8em;
-      text-transform: uppercase;
-      border: 3px solid white;
-      border-radius: 20px 0px;
-      padding: 10px;
-      transition: transform 500ms ease-in-out;
-    }
-    a:hover {
-      display: flex;
-      justify-content: center;
-      width: 160px;
-      background-color: white;
-      border: 3px solid black;
-      color: inherit;
-      transform: scale(1.15);
-    }
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 7px;
+
+  .nav-link:hover {
+    background-color: inherit;
+    color: black;
   }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 3px solid white;
+    border-radius: 20px 0px;
+    padding: 10px;
+    transition: transform 500ms ease-in-out;
+  }
+
+  a:hover {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    background-color: white;
+    border: 3px solid black;
+    color: inherit;
+    transform: scale(1.15);
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 100px;
+}
+.drop-menu:hover {
+  background-color: inherit;
+  color: black;
 }
 
 //main section
@@ -178,9 +198,13 @@ footer {
 
 // Media Queries
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .nav-link li {
-    display: none;
+@media only screen and (min-width: 320px) and (max-width: 798px) {
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-size: 0.8em;
+    }
   }
   footer {
     .socialinks-1,
@@ -194,10 +218,14 @@ footer {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
-  .nav-link li {
+@media only screen and (min-width: 799px) and (max-width: 1280px) {
+  .nav-link {
     display: flex;
   }
+  .drop-menu {
+    display: none;
+  }
+
   footer {
     .socialinks-1,
     .socialinks-2 {
@@ -211,4 +239,10 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
+  .nav-link {
+    display: flex;
+  }
+  .drop-menu {
+    display: none;
+  }
 }
