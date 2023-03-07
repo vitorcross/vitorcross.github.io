@@ -206,6 +206,7 @@ footer {
       font-size: 0.8em;
     }
   }
+
   footer {
     .socialinks-1,
     .socialinks-2 {
@@ -219,11 +220,16 @@ footer {
 }
 
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
-  .nav-link {
+  .nav-link a {
     display: flex;
+    flex-direction: row;
   }
   .drop-menu {
     display: none;
+  }
+
+  .show {
+    visibility: visible;
   }
 
   footer {
@@ -241,8 +247,14 @@ footer {
 @media screen and (min-width: 1281px) {
   .nav-link {
     display: flex;
+    flex-direction: row;
   }
+
   .drop-menu {
     display: none;
+  }
+
+  .show {
+    visibility: visible;
   }
 }

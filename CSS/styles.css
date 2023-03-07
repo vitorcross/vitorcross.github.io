@@ -189,11 +189,15 @@ footer .socialinks-3 {
   }
 }
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
-  .nav-link {
+  .nav-link a {
     display: flex;
+    flex-direction: row;
   }
   .drop-menu {
     display: none;
+  }
+  .show {
+    visibility: visible;
   }
   footer .socialinks-1,
   footer .socialinks-2 {
@@ -207,8 +211,12 @@ footer .socialinks-3 {
 @media screen and (min-width: 1281px) {
   .nav-link {
     display: flex;
+    flex-direction: row;
   }
   .drop-menu {
     display: none;
+  }
+  .show {
+    visibility: visible;
   }
 }/*# sourceMappingURL=styles.css.map */
