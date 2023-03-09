@@ -9,9 +9,9 @@
 //body section
 
 body {
-  background-image: linear-gradient(to bottom, #f3c706, #f6c503, #f9c201, #fcc000, #ffbd00);
-  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); 
-  background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034); */
+  background-image: linear-gradient(to right, #fccf31, #ffb02f, #ff9139, #ff7247, #f55555);
+  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); */
+  /* background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034); */
 }
 img {
   max-width: 100%;
@@ -39,10 +39,14 @@ header {
   align-items: center;
   gap: 20px;
   padding: 7px;
+  transform: translateX(0%) translateY(10%);
 
   .nav-link:hover {
-    background-color: inherit;
     color: black;
+  }
+
+  li {
+    list-style-type: none;
   }
 
   a {
@@ -68,20 +72,30 @@ header {
   }
 }
 
-.show {
+button {
+  background: none;
   display: flex;
-  flex-direction: column;
-  visibility: hidden;
+  justify-self: center;
+  align-self: center;
 }
 
 .drop-menu {
   display: flex;
   flex-direction: column;
-  margin: 25px 100px;
 }
 .drop-menu:hover {
   background-color: inherit;
   color: black;
+}
+
+//For HAMBURGER MENU
+.nav-link.hidden {
+  display: none;
+}
+
+.nav-link.show {
+  display: flex;
+  flex-direction: column;
 }
 
 //main section
@@ -220,16 +234,13 @@ footer {
 }
 
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
-  .nav-link a {
+  .nav-link {
     display: flex;
     flex-direction: row;
   }
-  .drop-menu {
-    display: none;
-  }
 
-  .show {
-    visibility: visible;
+  .drop-menu {
+    display: flex;
   }
 
   footer {
@@ -245,16 +256,12 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
-  .nav-link {
+  .nav-link.show {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .drop-menu {
-    display: none;
-  }
-
-  .show {
-    visibility: visible;
+    display: flex;
   }
 }
