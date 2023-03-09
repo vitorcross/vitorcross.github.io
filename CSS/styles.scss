@@ -2,15 +2,29 @@
 
 :root {
   --header-font: 'Roboto', sans-serif;
-  --main-font: 'Dancing Script', cursive;
+  --main-font: 'Merriweather', serif;
   --footer-font: 'Flamenco', cursive;
 }
 
 //body section
 
 body {
-  background-image: linear-gradient(to right, #fccf31, #ffb02f, #ff9139, #ff7247, #f55555);
-  /* background-image: linear-gradient(to right, #93a5cf, #94bcd6, #a7cfd9, #c4e0dd, #e4efe9); */
+  /*  background-image: linear-gradient(to right, #fccf31, #ffb02f, #ff9139, #ff7247, #f55555); */
+  background-image: linear-gradient(
+    to right bottom,
+    #31418c,
+    #3c4a96,
+    #4653a0,
+    #515caa,
+    #5b65b4,
+    #6668b9,
+    #706cbf,
+    #7b6fc4,
+    #886dc4,
+    #966ac3,
+    #a267c1,
+    #af64be
+  );
   /* background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034); */
 }
 img {
@@ -81,8 +95,8 @@ button {
 
 .drop-menu {
   display: flex;
-  flex-direction: column;
 }
+
 .drop-menu:hover {
   background-color: inherit;
   color: black;
@@ -111,16 +125,23 @@ main {
   .myface {
     display: flex;
     border-radius: 50%;
-    max-width: 30%;
+    max-width: 40vw;
     margin-top: 100px;
     opacity: 0.9;
+    @media screen and (min-width: 768px) {
+      max-width: 25vw;
+    }
+    @media screen and (min-width: 1028px) {
+      max-width: 15vw;
+    }
   }
+
   .center-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 2.2em;
     margin: 50px;
     h1 {
@@ -234,13 +255,9 @@ footer {
 }
 
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
-  .nav-link {
+  .nav-link.hidden {
     display: flex;
     flex-direction: row;
-  }
-
-  .drop-menu {
-    display: flex;
   }
 
   footer {
@@ -256,12 +273,21 @@ footer {
 }
 
 @media screen and (min-width: 1281px) {
-  .nav-link.show {
+  .nav-link.hidden {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .drop-menu {
     display: flex;
+  }
+
+  .center-text {
+    h1 {
+      margin: 50px;
+    }
+    p {
+      margin: 0px 200px;
+    }
   }
 }
