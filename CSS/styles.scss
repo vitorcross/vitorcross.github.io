@@ -188,6 +188,14 @@ footer {
     line-height: 2em;
     gap: 10px;
   }
+
+  .network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .socialinks-1,
   .socialinks-2 {
     display: flex;
@@ -199,12 +207,6 @@ footer {
       text-decoration: none;
       color: white;
     }
-  }
-  .socialinks-3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
   }
 }
 
@@ -224,7 +226,7 @@ footer {
     .socialinks-2 {
       display: none;
     }
-    .socialinks-3 {
+    .network {
       padding: 20px;
       margin: auto;
     }
@@ -237,7 +239,7 @@ footer {
     .socialinks-2 {
       display: none;
     }
-    .socialinks-3 {
+    .network {
       padding: 20px;
       margin: auto;
     }

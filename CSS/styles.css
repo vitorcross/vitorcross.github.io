@@ -163,6 +163,12 @@ footer .social {
   line-height: 2em;
   gap: 10px;
 }
+footer .network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
 footer .socialinks-1,
 footer .socialinks-2 {
   display: flex;
@@ -175,12 +181,6 @@ footer .socialinks-1 a,
 footer .socialinks-2 a {
   text-decoration: none;
   color: white;
-}
-footer .socialinks-3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 798px) {
@@ -195,7 +195,7 @@ footer .socialinks-3 {
   footer .socialinks-2 {
     display: none;
   }
-  footer .socialinks-3 {
+  footer .network {
     padding: 20px;
     margin: auto;
   }
@@ -205,7 +205,7 @@ footer .socialinks-3 {
   footer .socialinks-2 {
     display: none;
   }
-  footer .socialinks-3 {
+  footer .network {
     padding: 20px;
     margin: auto;
   }
