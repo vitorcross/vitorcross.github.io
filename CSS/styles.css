@@ -1,13 +1,11 @@
 :root {
   --header-font: "Roboto", sans-serif;
   --main-font: "Merriweather", serif;
-  --footer-font: "Flamenco", cursive;
+  --footer-font: "Belleza", sans-serif;
 }
 
 body {
-  /*  background-image: linear-gradient(to right, #fccf31, #ffb02f, #ff9139, #ff7247, #f55555); */
-  background-image: linear-gradient(to right bottom, #31418c, #3c4a96, #4653a0, #515caa, #5b65b4, #6668b9, #706cbf, #7b6fc4, #886dc4, #966ac3, #a267c1, #af64be);
-  /* background-image: linear-gradient(to right, #ffdd00, #ffd115, #ffc622, #febb2c, #fbb034); */
+  background-image: linear-gradient(to right, #ad5389, #91407c, #752f6f, #591f61, #3c1053);
 }
 
 img {
@@ -19,7 +17,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   font-family: var(--header-font);
-  /* background-color: rgb(243, 199, 6); */
   padding: 20px;
 }
 
@@ -32,35 +29,29 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
-  padding: 7px;
-  transform: translateX(0%) translateY(10%);
-}
-.nav-link .nav-link:hover {
-  color: black;
 }
 .nav-link li {
   list-style-type: none;
+  display: flex;
+  margin: 50px;
 }
 .nav-link a {
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, #b478b1, #9161aa 50%, rgb(187, 187, 187) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
   text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  border: 3px solid white;
-  border-radius: 20px 0px;
-  padding: 10px;
-  transition: transform 500ms ease-in-out;
 }
 .nav-link a:hover {
-  display: flex;
-  justify-content: center;
-  width: 160px;
-  background-color: white;
-  border: 3px solid black;
-  color: inherit;
-  transform: scale(1.15);
+  background-position: 0 100%;
 }
 
 button {
@@ -119,7 +110,7 @@ main .center-text {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 2.2em;
   margin: 50px;
 }
@@ -210,10 +201,6 @@ footer .socialinks-3 {
   }
 }
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
-  .nav-link.hidden {
-    display: flex;
-    flex-direction: row;
-  }
   footer .socialinks-1,
   footer .socialinks-2 {
     display: none;
