@@ -55,6 +55,16 @@ img {
   .intro p {
     opacity: 0.6;
   }
+  #map {
+    display: flex;
+    width: 70vw;
+    height: 40vh;
+
+    @media screen and (min-width: 799px) and (min-width: 1280px) {
+      width: 40vw;
+      height: 40vh;
+    }
+  }
 }
 
 /* second part of the form */
