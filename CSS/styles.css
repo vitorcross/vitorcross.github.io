@@ -113,6 +113,7 @@ main .center-text {
   font-size: 1.2em;
   line-height: 2.2em;
   margin: 50px;
+  color: rgb(216, 216, 216);
 }
 main .center-text h1 {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -190,17 +191,15 @@ footer .socialinks-2 a {
     position: absolute;
   }
   .nav-link a {
-    font-size: 1em;
-    position: relative;
-    top: 70px;
-    left: 0;
-    right: 0;
+    color: black;
   }
-  .nav-link a:hover {
-    display: none;
-    background-color: white;
-    transition: none;
-    overflow: visible;
+  .nav-link a {
+    position: relative;
+    color: white;
+    font-size: 1em;
+    top: 100px;
+    left: 160px;
+    right: 0;
   }
   footer .socialinks-1,
   footer .socialinks-2 {
