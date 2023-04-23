@@ -13,15 +13,20 @@ img {
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   font-family: var(--header-font);
   padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.logo {
+.drop-menu {
   display: flex;
+}
+
+.drop-menu:hover {
+  background-color: inherit;
+  color: black;
 }
 
 .nav-link {
@@ -54,20 +59,10 @@ header {
   background-position: 0 100%;
 }
 
-button {
-  background: none;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-}
-
-.drop-menu {
-  display: flex;
-}
-
-.drop-menu:hover {
-  background-color: inherit;
-  color: black;
+.hamburger {
+  margin: 20px;
+  width: 10%;
+  height: 10%;
 }
 
 .nav-link.hidden {
@@ -185,6 +180,9 @@ footer .socialinks-2 a {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 798px) {
+  .drop-menu {
+    display: none;
+  }
   .nav-link {
     display: flex;
     flex-direction: column;
@@ -197,9 +195,8 @@ footer .socialinks-2 a {
     position: relative;
     color: white;
     font-size: 1em;
-    top: 100px;
-    left: 140px;
-    right: 0;
+    top: 130px;
+    margin: auto;
   }
   footer .socialinks-1,
   footer .socialinks-2 {
@@ -211,6 +208,17 @@ footer .socialinks-2 a {
   }
 }
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
+  .hamburger.hidden {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-link.hidden {
+    display: flex;
+    flex-direction: row;
+  }
   footer .socialinks-1,
   footer .socialinks-2 {
     display: none;
@@ -221,6 +229,13 @@ footer .socialinks-2 a {
   }
 }
 @media screen and (min-width: 1281px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger.hidden {
+    display: none;
+  }
   .nav-link.hidden {
     display: flex;
     flex-direction: row;
