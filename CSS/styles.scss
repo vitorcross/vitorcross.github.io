@@ -35,53 +35,37 @@ header {
   color: black;
 }
 
-.nav-link {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-
-  li {
-    list-style-type: none;
-    display: flex;
-    margin: 25px;
-  }
-
-  a {
-    position: relative;
-    display: inline-block;
-    font-size: 2em;
-    font-weight: 800;
-    overflow: hidden;
-    background: linear-gradient(to right, #b478b1, #9161aa 50%, rgb(187, 187, 187) 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none;
-
-    &:hover {
-      background-position: 0 100%;
-    }
-  }
-}
-
 //For HAMBURGER MENU
 .hamburger {
   margin: 20px;
-  width: 10%;
-  height: 10%;
+  width: 50px;
+  height: 50px;
 }
 
-.nav-link.hidden {
+.nav-link {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+    line-height: 3em;
+    color: whitesmoke;
+  }
+}
+
+.nav-link.mobile-hidden {
   display: none;
 }
 
-.nav-link.show {
+.nav-link.mobile-show {
   display: flex;
+  position: absolute;
   flex-direction: column;
+  top: 100px;
+  width: 100px;
+  height: 150px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  text-align: center;
 }
 
 //main section
@@ -211,28 +195,10 @@ footer {
 // Media Queries
 
 @media only screen and (min-width: 320px) and (max-width: 798px) {
-  .drop-menu {
+  /* .drop-menu {
     display: none;
   }
-
-  .nav-link {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-
-    a {
-      color: black;
-    }
-
-    a {
-      position: relative;
-      color: white;
-      font-size: 1em;
-      top: 130px;
-      margin: auto;
-    }
-  }
-
+ */
   footer {
     .socialinks-1,
     .socialinks-2 {
@@ -253,6 +219,24 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    a {
+      color: black;
+    }
+
+    a {
+      position: relative;
+      color: white;
+      font-size: 1em;
+      top: 130px;
+      margin: auto;
+    }
   }
 
   .nav-link.hidden {
@@ -282,9 +266,37 @@ footer {
     display: none;
   }
 
-  .nav-link.hidden {
+  .nav-link.nav-link.mobile-hidden {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      list-style-type: none;
+      display: flex;
+      margin: 25px;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 2em;
+      font-weight: 800;
+      overflow: hidden;
+      background: linear-gradient(to right, #b478b1, #9161aa 50%, rgb(187, 187, 187) 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none;
+
+      &:hover {
+        background-position: 0 100%;
+      }
+    }
   }
 
   .drop-menu {

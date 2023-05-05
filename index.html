@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet" />
+    <script defer="defer" src="/JS/slider.js"></script>
+    <link href="/CSS/slider.css" rel="stylesheet" />
     <title>Portfolio Treino</title>
   </head>
   <body>
@@ -24,33 +26,23 @@
           src="Images/logos/Logo Files/For Web/png/Whitelogo.no.bg.png"
           alt="logo"
       /></a>
-      <img class="hamburger hidden" src="Images/hamburger.png" alt="hamburger-menu" id="btn" />
-      <ul class="nav-link hidden" id="hamburger">
-        <li><a href="myPorjects.html" target="”_blank”">My Projects</a></li>
-        <li><a href="skills.html" target="”_blank”">Skills</a></li>
-        <li><a href="contact.html" target="”_blank”">Contact</a></li>
-      </ul>
+      <div class="burger-menu">
+        <img class="hamburger hidden" src="Images/hamburger.png" alt="hamburger-menu" />
+        <ul class="nav-link mobile-hidden">
+          <li><a href="myPorjects.html" target="”_blank”">Projects</a></li>
+          <li><a href="skills.html" target="”_blank”">Skills</a></li>
+          <li><a href="contact.html" target="”_blank”">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="center">
         <img class="myface" src="Images/me-B&W.jpg" alt="faceimage" />
         <div class="center-text">
           <h1>Hello, my name is Vitor</h1>
-          <p>
-            I'm a Junior Front-End WebDeveloper. I have always had interest in computers and I wish
-            to make this my new project of life. Worked as a nurse since 2012 until present, I have
-            worked in Portugal 🇵🇹, Belgium 🇧🇪 and UK 🇬🇧. This year I decided it was time to change
-            my working life direction, I got into an online/live training for a full course of
-            Front-End WebDeveloper which took me 7 months to complete. There I have learned from the
-            most basic to the most advanced coding in HTML, CSS (SASS included) and Javascript (with
-            React framework).
-          </p>
         </div>
       </section>
-      <div class="empty">
-        <img src="Images/codeofhonors.png" alt="codeofhonors" />
-      </div>
-      <div class="map" id="map"></div>
+      <div id="root"></div>
     </main>
     <footer>
       <div class="social">
@@ -65,10 +57,9 @@
       </div>
       <div class="socialinks-1">
         <a href="#">Home</a>
-        <a href="myProjects.html" target="”_blank”">My Projects</a>
+        <a href="myProjects.html" target="”_blank”">Projects</a>
       </div>
       <div class="socialinks-2">
-        <!-- <a href="resume.html" target="”_blank”">Resume</a> -->
         <a href="skills.html" target="”_blank”">Skills</a>
         <a href="contact.html" target="”_blank”">Contact</a>
       </div>

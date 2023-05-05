@@ -1,15 +1,18 @@
-const dropdownMenu = document.querySelector('#hamburger');
-const dropdownBtn = document.querySelector('#btn');
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.nav-link');
 
-const toggleDropdown = function () {
-  dropdownMenu.classList.toggle('show');
+const toggleMenu = function () {
+  console.log('click');
+  console.log(menu.classList);
+  menu.classList.contains('mobile-show')
+    ? menu.classList.remove('mobile-show')
+    : menu.classList.toggle('mobile-show');
 };
 
-dropdownBtn.addEventListener(
+hamburger.addEventListener(
   'click',
   function (e) {
-    e.stopPropagation();
-    toggleDropdown();
+    toggleMenu();
   },
   false
 );
