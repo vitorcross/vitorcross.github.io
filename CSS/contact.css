@@ -9,8 +9,8 @@ body {
 
 main {
   margin: 20px;
-  border: 1px solid rgb(243, 199, 6);
-  box-shadow: 0 10px 20px rgb(243, 199, 6);
+  border: 1px solid #ad5389;
+  box-shadow: 0 10px 20px #91407c;
   border-radius: 12px;
 }
 
@@ -19,11 +19,11 @@ header {
 }
 header h1 {
   font-size: 2.5em;
-  text-shadow: -10px 10px 0px rgb(243, 199, 6);
+  text-shadow: -10px 10px 0px #ad5389;
 }
 header p {
   width: 30px;
-  border-bottom: 4px solid rgb(243, 199, 6);
+  border-bottom: 4px solid #3c1053;
   border-radius: 2px;
 }
 

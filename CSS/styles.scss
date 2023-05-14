@@ -72,18 +72,21 @@ header {
 
 main {
   font-family: var(--main-font);
+
   .center {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 200px;
   }
+
   .myface {
     display: flex;
     border-radius: 50%;
     max-width: 40vw;
     margin-top: 100px;
     opacity: 0.9;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     @media screen and (min-width: 768px) {
       max-width: 25vw;
     }
@@ -103,6 +106,7 @@ main {
     color: rgb(216, 216, 216);
 
     h1 {
+      text-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       @-webkit-keyframes tracking-in-expand {
@@ -130,24 +134,6 @@ main {
         }
       }
     }
-    .btn {
-      transition: all 1s;
-      position: relative;
-      padding: 20px;
-    }
-
-    .btn {
-      color: white;
-      font-size: 1.5em;
-      list-style-type: none;
-      text-decoration: none;
-    }
-  }
-
-  .empty {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 }
 
@@ -172,44 +158,16 @@ footer {
   }
 
   .network {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+    padding: 20px;
+    margin: auto;
   }
 
-  .socialinks-1,
-  .socialinks-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    a {
-      text-decoration: none;
-      color: white;
-    }
+  .socialinks {
+    display: none;
   }
 }
 
 // Media Queries
-
-@media only screen and (min-width: 320px) and (max-width: 798px) {
-  /* .drop-menu {
-    display: none;
-  }
- */
-  footer {
-    .socialinks-1,
-    .socialinks-2 {
-      display: none;
-    }
-    .network {
-      padding: 20px;
-      margin: auto;
-    }
-  }
-}
 
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
   .hamburger.hidden {
@@ -228,9 +186,6 @@ footer {
 
     a {
       color: black;
-    }
-
-    a {
       position: relative;
       color: white;
       font-size: 1em;
@@ -244,15 +199,8 @@ footer {
     flex-direction: row;
   }
 
-  footer {
-    .socialinks-1,
-    .socialinks-2 {
-      display: none;
-    }
-    .network {
-      padding: 20px;
-      margin: auto;
-    }
+  main .myface {
+    max-width: 25vw;
   }
 }
 
@@ -309,6 +257,35 @@ footer {
     }
     p {
       margin: 0px 200px;
+    }
+  }
+
+  main .myface {
+    max-width: 15vw;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .network {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .socialinks {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }

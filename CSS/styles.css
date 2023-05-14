@@ -75,6 +75,7 @@ main .myface {
   max-width: 40vw;
   margin-top: 100px;
   opacity: 0.9;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 768px) {
   main .myface {
@@ -97,6 +98,7 @@ main .center-text {
   color: rgb(216, 216, 216);
 }
 main .center-text h1 {
+  text-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 @keyframes tracking-in-expand {
@@ -110,22 +112,6 @@ main .center-text h1 {
   100% {
     opacity: 1;
   }
-}
-main .center-text .btn {
-  transition: all 1s;
-  position: relative;
-  padding: 20px;
-}
-main .center-text .btn {
-  color: white;
-  font-size: 1.5em;
-  list-style-type: none;
-  text-decoration: none;
-}
-main .empty {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 footer {
@@ -146,39 +132,13 @@ footer .social {
   gap: 10px;
 }
 footer .network {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
+  padding: 20px;
+  margin: auto;
 }
-footer .socialinks-1,
-footer .socialinks-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-footer .socialinks-1 a,
-footer .socialinks-2 a {
-  text-decoration: none;
-  color: white;
+footer .socialinks {
+  display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 798px) {
-  /* .drop-menu {
-     display: none;
-   }
-  */
-  footer .socialinks-1,
-  footer .socialinks-2 {
-    display: none;
-  }
-  footer .network {
-    padding: 20px;
-    margin: auto;
-  }
-}
 @media only screen and (min-width: 799px) and (max-width: 1280px) {
   .hamburger.hidden {
     display: none;
@@ -194,8 +154,6 @@ footer .socialinks-2 a {
   }
   .nav-link a {
     color: black;
-  }
-  .nav-link a {
     position: relative;
     color: white;
     font-size: 1em;
@@ -206,13 +164,8 @@ footer .socialinks-2 a {
     display: flex;
     flex-direction: row;
   }
-  footer .socialinks-1,
-  footer .socialinks-2 {
-    display: none;
-  }
-  footer .network {
-    padding: 20px;
-    margin: auto;
+  main .myface {
+    max-width: 25vw;
   }
 }
 @media screen and (min-width: 1281px) {
@@ -260,5 +213,30 @@ footer .socialinks-2 a {
   }
   .center-text p {
     margin: 0px 200px;
+  }
+  main .myface {
+    max-width: 15vw;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  footer .network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  footer .socialinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .socialinks a {
+    gap: 10px;
+    text-decoration: none;
+    color: white;
   }
 }/*# sourceMappingURL=styles.css.map */
