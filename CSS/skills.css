@@ -61,6 +61,15 @@ main .myface img {
   }
 }
 
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: white;
+}
+
 .container {
   display: flex;
   flex-direction: column;

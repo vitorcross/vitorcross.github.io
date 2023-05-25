@@ -60,6 +60,15 @@ main {
   }
 }
 
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  a {
+    color: white;
+  }
+}
+
 //buttons setup
 
 .container {

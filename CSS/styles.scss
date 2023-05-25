@@ -44,6 +44,7 @@ header {
 
 .nav-link {
   list-style-type: none;
+  position: relative;
 
   a {
     text-decoration: none;
@@ -60,12 +61,16 @@ header {
   display: flex;
   position: absolute;
   flex-direction: column;
-  top: 100px;
+  top: 130px;
   width: 100px;
-  height: 150px;
+  height: 190px;
+  padding: 15px;
   font-size: 18px;
   font-family: var(--main-font);
   text-align: center;
+  background-color: #3c1053;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
 }
 
 //main section
@@ -214,7 +219,7 @@ footer {
     display: none;
   }
 
-  .nav-link.nav-link.mobile-hidden {
+  .nav-link.mobile-hidden {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
