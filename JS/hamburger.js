@@ -14,3 +14,23 @@ hamburger.addEventListener(
   },
   false
 );
+
+window.addEventListener(
+  'resize',
+  function (e) {
+    if (window.innerWidth > 799) {
+      toggleMenu();
+    }
+  },
+  false
+);
+
+window.addEventListener(
+  'click',
+  function (e) {
+    if (menu.classList.contains('mobile-show')) {
+      toggleMenu();
+    }
+  },
+  false
+);
