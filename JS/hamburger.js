@@ -18,8 +18,8 @@ hamburger.addEventListener(
 window.addEventListener(
   'resize',
   function (e) {
-    if (window.innerWidth > 799) {
-      toggleMenu();
+    if (window.innerWidth > 1279) {
+      menu.classList.remove('mobile-show');
     }
   },
   false
@@ -28,8 +28,12 @@ window.addEventListener(
 window.addEventListener(
   'click',
   function (e) {
-    if (menu.classList.contains('mobile-show')) {
-      toggleMenu();
+    if (
+      !hamburger.contains(e.target) &&
+      !menu.contains(e.target) &&
+      menu.classList.contains('mobile-show')
+    ) {
+      menu.classList.remove('mobile-show');
     }
   },
   false

@@ -22,7 +22,7 @@ header {
   font-family: var(--Belleza-font);
   padding: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -184,24 +184,37 @@ footer {
     justify-content: space-between;
   }
 
-  .nav-link {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-
-    a {
-      color: black;
-      position: relative;
-      color: white;
-      font-size: 1em;
-      top: 130px;
-      margin: auto;
-    }
-  }
-
-  .nav-link.hidden {
+  .nav-link.mobile-hidden {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+      list-style-type: none;
+      display: flex;
+      margin: 15px;
+    }
+
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 1.7em;
+      font-weight: 800;
+      overflow: hidden;
+      background: linear-gradient(to right, #b478b1, #9161aa 50%, rgb(187, 187, 187) 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none;
+
+      &:hover {
+        background-position: 0 100%;
+      }
+    }
   }
 
   main .myface {
