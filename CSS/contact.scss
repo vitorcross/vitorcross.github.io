@@ -84,7 +84,7 @@ main {
   .intro-link {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 60px;
   }
 
   .intro-area img {
@@ -115,41 +115,31 @@ main {
 /* second part of the form */
 
 .details {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 150px;
-
-  input {
-    width: 500px;
-    height: 40px;
-  }
-
-  textarea {
-    width: 500px;
-    height: 40px;
-  }
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  padding: 150px 70px;
 
   .form-1 {
-    display: flex;
+    display: grid;
     font-size: 14px;
     opacity: 0.6;
   }
 
   .form-2 {
-    display: flex;
+    display: grid;
     font-size: 14px;
     opacity: 0.6;
   }
 
   .form-3 {
-    display: flex;
+    display: grid;
     font-size: 14px;
     opacity: 0.6;
     margin-top: 10px;
   }
 
   .form-4 {
-    display: flex;
+    display: grid;
     opacity: 0.6;
   }
 
@@ -234,30 +224,6 @@ main {
         background-position: 0 100%;
       }
     }
-  }
-
-  .intro {
-    display: flex;
-
-    margin: 50px;
-    gap: 250px;
-
-    .intro-link {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-content: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .intro-area img {
-      display: flex;
-      margin: 5px;
-    }
-  }
-  .details {
-    display: grid;
-    grid-template-columns: repeat(minmax(300px, 1fr));
   }
 }
 

@@ -81,7 +81,7 @@ main {
 .intro .intro-link {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 60px;
 }
 .intro .intro-area img {
   display: flex;
@@ -108,36 +108,28 @@ main {
 
 /* second part of the form */
 .details {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 150px;
-}
-.details input {
-  width: 500px;
-  height: 40px;
-}
-.details textarea {
-  width: 500px;
-  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  padding: 150px 70px;
 }
 .details .form-1 {
-  display: flex;
+  display: grid;
   font-size: 14px;
   opacity: 0.6;
 }
 .details .form-2 {
-  display: flex;
+  display: grid;
   font-size: 14px;
   opacity: 0.6;
 }
 .details .form-3 {
-  display: flex;
+  display: grid;
   font-size: 14px;
   opacity: 0.6;
   margin-top: 10px;
 }
 .details .form-4 {
-  display: flex;
+  display: grid;
   opacity: 0.6;
 }
 .details .textbox-1,
@@ -211,26 +203,6 @@ main {
   }
   .nav-link.mobile-hidden a:hover {
     background-position: 0 100%;
-  }
-  .intro {
-    display: flex;
-    margin: 50px;
-    gap: 250px;
-  }
-  .intro .intro-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
-  }
-  .intro .intro-area img {
-    display: flex;
-    margin: 5px;
-  }
-  .details {
-    display: grid;
-    grid-template-columns: repeat(minmax(300px, 1fr));
   }
 }
 @media screen and (min-width: 1281px) {
