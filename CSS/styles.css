@@ -24,11 +24,6 @@ header {
   display: flex;
 }
 
-.drop-menu:hover {
-  background-color: inherit;
-  color: black;
-}
-
 .hamburger {
   margin: 50px;
   width: 30px;
