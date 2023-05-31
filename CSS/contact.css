@@ -248,4 +248,11 @@ main {
   .drop-menu {
     display: flex;
   }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    max-width: 600px;
+    margin: 40px 250px;
+    gap: 0.8rem;
+  }
 }/*# sourceMappingURL=contact.css.map */
