@@ -13,7 +13,7 @@ img {
 }
 
 header {
-  font-family: var(--Belleza-font);
+  font-family: var(--header-font);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,6 @@ header {
   height: 190px;
   padding: 15px;
   font-size: 18px;
-  font-family: var(--main-font);
   text-align: center;
   background-color: #3c1053;
   box-shadow: 0 0 20px black;

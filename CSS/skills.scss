@@ -1,9 +1,4 @@
 body {
-  /* position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;*/
   margin-bottom: 80px;
   background: linear-gradient(to bottom, #5d326c, #350048);
 }
@@ -13,7 +8,7 @@ img {
 }
 
 header {
-  font-family: var(--Belleza-font);
+  font-family: var(--header-font);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -51,10 +46,9 @@ header {
   flex-direction: column;
   top: 130px;
   width: 100px;
-  height: 190px;
+  height: 210px;
   padding: 15px;
   font-size: 18px;
-  font-family: var(--main-font);
   text-align: center;
   background-color: #3c1053;
   box-shadow: 0 0 20px black;
