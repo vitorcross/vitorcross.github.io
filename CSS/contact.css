@@ -1,10 +1,11 @@
 :root {
   --header-font: "Roboto", sans-serif;
   --main-font: "Dancing Script", cursive;
+  --Belleza-font: "Belleza", sans-serif;
 }
 
 body {
-  font-family: var(--header-font);
+  font-family: var(--Belleza-font);
   background: linear-gradient(to bottom, #5d326c, #350048);
   color: white;
 }
@@ -81,7 +82,7 @@ main {
 .intro .intro-link {
   display: flex;
   flex-direction: column;
-  margin: 60px;
+  margin: 40px;
 }
 .intro .intro-area img {
   display: flex;
@@ -109,8 +110,10 @@ main {
 /* second part of the form */
 .details {
   display: grid;
-  grid-template-columns: repeat(1, 400px);
-  padding: 150px 70px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 400px;
+  margin: 40px;
+  gap: 0.5rem;
 }
 .details .form-1 {
   display: grid;
