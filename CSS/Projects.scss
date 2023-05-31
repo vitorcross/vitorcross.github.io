@@ -6,6 +6,7 @@
 
 body {
   background-image: linear-gradient(to right, #ad5389, #91407c, #752f6f, #591f61, #3c1053);
+  text-align: center;
 }
 
 img {
@@ -50,7 +51,7 @@ header {
   position: absolute;
   flex-direction: column;
   top: 130px;
-  width: 100px;
+  width: 90px;
   height: 210px;
   padding: 15px;
   font-size: 18px;
@@ -60,12 +61,15 @@ header {
   border-radius: 10px;
 }
 
-h1 {
-  text-align: center;
-  font-family: var(--header-font);
-  color: white;
-  margin: 200px;
-  text-shadow: 0 15px 15px rgba(0, 0, 0, 1);
+main {
+  h1 {
+    font-family: var(--header-font);
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+    text-shadow: 0 15px 15px rgba(0, 0, 0, 1);
+  }
 }
 
 section {
